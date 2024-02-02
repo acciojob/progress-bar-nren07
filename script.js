@@ -6,7 +6,7 @@
         const next=document.getElementById("next");
 
         function navigate(direction){
-            const currentElement=document.getElementById(currentNode);
+            const currentElement=document.getElementById(`circle-${currentNode}`);
             if(direction==="next" && currentElement.nextElementSibling){
                 currentElement.nextElementSibling.classList.add("active");
                 currentElement.nextElementSibling.nextElementSibling.classList.add("active");
